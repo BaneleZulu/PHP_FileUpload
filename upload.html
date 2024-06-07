@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upload Image to PHP</title>
+</head>
+
+<body>
+    <fieldset>
+        <legend>Image Upload Form</legend>
+        <form action="upload.php" method="post" enctype="multipart/form-data">
+            <p>This form is a demonstration on how to upload an image to PHP.</p>
+            <label for="img">Select image to upload <span>&#128194;</span></label>
+            <input type="file" name="img" id="img" title="Insert image here">
+            <input type="submit" value="Upload" name="submit">
+        </form>
+    </fieldset>
+</body>
+<style>
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: linear-gradient(65deg, black, gray);
+        height: 100vh;
+        overflow: hidden;
+        color: #fff;
+    }
+
+    fieldset {
+        width: 40dvw;
+        height: 30dvh;
+        border-radius: 2rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 1rem;
+
+        legend {
+            font-size: 2rem;
+            color: #eee;
+        }
+
+        form {
+            border: .5rem ridge #333;
+            padding: 2rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: .5rem;
+
+            label {
+                span {
+                    font-size: 20px;
+                    display: inline-block;
+                    padding-left: .5rem;
+                }
+            }
+
+            input {
+                border-radius: .5rem;
+                background-color: darkcyan;
+                cursor: pointer;
+            }
+        }
+    }
+</style>
+
+</html>
